@@ -8,7 +8,7 @@
     width: 100%;
     max-width:96rem;
     margin: 0 auto;
-    background-color: #5731ff;
+    background-color: #310bda;
 }
 
 input {
@@ -21,128 +21,208 @@ input {
 
 .frame {
     width: 100%;
-    padding: 1vw;
-    background-color: red;
-    transition: 1s;
+    padding: 1vw 1vw 0 1vw;
+    /* background-color: red; */
+    transition: 1s linear;
 }
 
 .menu {
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
-    /* overflow: hidden; */
-    /* flex-wrap: wrap-reverse; */
 }
 
 .texts {
-    min-width: 20rem;
-    width: 20vw;
-    /* padding: 1vw 0 1vw 1vw; */
-    /* background-color: yellow; */
+    width: 27rem;
     display: flex;
-    /* flex-direction: column; */
     overflow: hidden;
-    /* margin: 0 auto; */
 }
 
 .btns {
-    /* width: 80%; */
-    background-color: #00ff44;
+    /* background-color: #00ff44; */
     display: flex;
     justify-content: end;
-    /* padding: 1vw 1vw 1vw 0; */
-    /* margin: 0 auto; */
 }
 
 .text {
-    /* width: 110%; */
-    min-width: 24rem;
-    /* display: inline-block; */
-    /* width: 100%; */
+    width: 27rem;
+    min-width: 27rem;
     font-size: 1.5rem;
-    /* color: #850000; */
-    background-color: #a186ff;
-    /* text-align: center; */
-    /* vertical-align: middle; */
+    color: aliceblue;
+    /* background-color: #a186ff; */
+    text-align: center;
     line-height: 3;
     white-space: nowrap;
-    margin-right: 2vw;
+    transition: 1s linear;
 }
 
-
-
 label {
-    /* display: block; */
-    /* padding: 1vw .5vw 1vw .5vw; */
     padding: 1vw 1vw 1vw 1vw;
     cursor: pointer;
     margin: auto 0;
 }
 
 .div_btn {
-    /* appearance: none; */
-    /* display: inline-block; */
     background-color: #ff3535;
     width: 1.8rem;
     height: 1.8rem;
-    /* padding: 1vw; */
-    /* transition: all .5s; */
-    /* align-items: center; */
-    /* margin: auto; */
     border: .2rem solid #000000;
     border-radius: 50%;
-    /* margin-left: 1vw; */
+    transition: .2s linear;
 }
-
 
 /*BTN1*/
 
-#btn1:checked ~ .menu .labels #label1{
-    /* background-color: #13c572; */
+#btn-1:hover ~ .menu #div-btn-1{
+    background-color: #c9c915;
 }
 
-#btn1:checked ~ .mems .frame{
-    /* transform: translateX(0%); */
+#btn-1:active  ~ .menu #div-btn-1{
+    background-color: #a600ff;
 }
 
-#btn1:hover ~ .menu .labels .div_btn1{
-    /* background-color: #13c572; */
+#btn-1:checked ~ .menu #div-btn-1{
+    background-color: #000000;
 }
 
-#btn1:active ~ .menu .labels #label1{
-    /* background-color: #18ff93; */
+#btn-1:checked ~ .mems .frame{
+    transform: translateX(0%);
+}
+
+#btn-1:checked ~ .menu .texts .text{
+    transform: translateX(0%);
 }
 
 /*BTN2*/
 
-#btn2:checked ~ .menu .labels #label2{
-    /* background-color: #13c572; */
+#btn-2:hover ~ .menu #div-btn-2{
+    background-color: #c9c915;
 }
 
-#btn2:checked ~ .mems .frame{
-    /* transform: translateX(-100%); */
+#btn-2:active  ~ .menu #div-btn-2{
+    background-color: #a600ff;
 }
 
-#btn2:hover ~ .menu .labels #label2{
-    /* background-color: #13c572; */
+#btn-2:checked ~ .menu #div-btn-2{
+    background-color: #000000;
 }
 
-#btn2:active ~ .menu .labels #label2{
-    /* background-color: #18ff93; */
+#btn-2:checked ~ .mems .frame{
+    transform: translateX(-100%);
 }
 
-
-
-#switcher1:checked ~ .mem-images-wrapper .mem {
-    /* transform: translateX(0%); */
+#btn-2:checked ~ .menu .texts .text {
+    transform: translateX(-100%);
 }
 
-#btn2:checked ~ .mems .frame{
-    /* background-color: #00ff15; */
-    /* transform: translateX(-400%); */
+/*BTN3*/
+
+#btn-3:hover ~ .menu #div-btn-3{
+    background-color: #c9c915;
 }
 
-#btn1:checked ~ .mems .frame{
-    /* background-color: #00ff15; */
-    /* transform: translateX(-300%); */
+#btn-3:active  ~ .menu #div-btn-3{
+    background-color: #a600ff;
 }
+
+#btn-3:checked ~ .menu #div-btn-3{
+    background-color: #000000;
+}
+
+#btn-3:checked ~ .mems .frame{
+    transform: translateX(-200%);
+}
+
+#btn-3:checked ~ .menu .texts .text {
+    transform: translateX(-200%);
+}
+
+/*BTN4*/
+
+#btn-4:hover ~ .menu #div-btn-4{
+    background-color: #c9c915;
+}
+
+#btn-4:active  ~ .menu #div-btn-4{
+    background-color: #a600ff;
+}
+
+#btn-4:checked ~ .menu #div-btn-4{
+    background-color: #000000;
+}
+
+#btn-4:checked ~ .mems .frame{
+    transform: translateX(-300%);
+}
+
+#btn-4:checked ~ .menu .texts .text {
+    transform: translateX(-300%);
+}
+
+/*BTN5*/
+
+#btn-5:hover ~ .menu #div-btn-5{
+    background-color: #c9c915;
+}
+
+#btn-5:active  ~ .menu #div-btn-5{
+    background-color: #a600ff;
+}
+
+#btn-5:checked ~ .menu #div-btn-5{
+    background-color: #000000;
+}
+
+#btn-5:checked ~ .mems .frame{
+    transform: translateX(-400%);
+}
+
+#btn-5:checked ~ .menu .texts .text {
+    transform: translateX(-400%);
+}
+
+@media screen and (max-width: 640px) {
+    .menu {
+        flex-wrap: wrap-reverse;
+    }
+
+    .texts {
+        margin: 0 auto;
+        width: 27rem;
+    }
+
+    .btns {
+        margin: 0 auto;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .menu {
+        justify-content: start;
+    }
+
+    .texts {
+        /* min-width: none; */
+        /* margin-left: 3vw; */
+        margin: 0;
+        width: 100vw;
+    }
+    .text {
+        /* display: block; */
+        min-width: 100vw;
+        /* white-space: wrap; */
+        font-size: 4vw;
+        width: 100%;
+        /* background-color: #fff; */
+        /* width: 30rem; */
+        /* padding/: 1vw; */
+        /* padding: 0; */
+        text-align: center;
+        /* margin-right: 3rem; */
+    }
+}
+
