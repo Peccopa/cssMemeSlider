@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    width: 100%;
+    max-width:96rem;
+    margin: 0 auto;
+    background-color: #5731ff;
+}
+
+input {
+    display: none;
+}
+.mems {
+    display: flex;
+    overflow: hidden;
+}
+
+.frame {
+    width: 100%;
+    padding: 1vw;
+    background-color: red;
+    transition: 1s;
+}
+
+.menu {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    /* flex-wrap: wrap-reverse; */
+}
+
+.texts {
+    min-width: 20rem;
+    width: 20vw;
+    /* padding: 1vw 0 1vw 1vw; */
+    /* background-color: yellow; */
+    display: flex;
+    /* flex-direction: column; */
+    overflow: hidden;
+    /* margin: 0 auto; */
+}
+
+.btns {
+    /* width: 80%; */
+    background-color: #00ff44;
+    display: flex;
+    justify-content: end;
+    /* padding: 1vw 1vw 1vw 0; */
+    /* margin: 0 auto; */
+}
+
+.text {
+    /* width: 110%; */
+    min-width: 24rem;
+    /* display: inline-block; */
+    /* width: 100%; */
+    font-size: 1.5rem;
+    /* color: #850000; */
+    background-color: #a186ff;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    line-height: 3;
+    white-space: nowrap;
+    margin-right: 2vw;
+}
+
+
+
+label {
+    /* display: block; */
+    /* padding: 1vw .5vw 1vw .5vw; */
+    padding: 1vw 1vw 1vw 1vw;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+.div_btn {
+    /* appearance: none; */
+    /* display: inline-block; */
+    background-color: #ff3535;
+    width: 1.8rem;
+    height: 1.8rem;
+    /* padding: 1vw; */
+    /* transition: all .5s; */
+    /* align-items: center; */
+    /* margin: auto; */
+    border: .2rem solid #000000;
+    border-radius: 50%;
+    /* margin-left: 1vw; */
+}
+
+
+/*BTN1*/
+
+#btn1:checked ~ .menu .labels #label1{
+    /* background-color: #13c572; */
+}
+
+#btn1:checked ~ .mems .frame{
+    /* transform: translateX(0%); */
+}
+
+#btn1:hover ~ .menu .labels .div_btn1{
+    /* background-color: #13c572; */
+}
+
+#btn1:active ~ .menu .labels #label1{
+    /* background-color: #18ff93; */
+}
+
+/*BTN2*/
+
+#btn2:checked ~ .menu .labels #label2{
+    /* background-color: #13c572; */
+}
+
+#btn2:checked ~ .mems .frame{
+    /* transform: translateX(-100%); */
+}
+
+#btn2:hover ~ .menu .labels #label2{
+    /* background-color: #13c572; */
+}
+
+#btn2:active ~ .menu .labels #label2{
+    /* background-color: #18ff93; */
+}
+
+
+
+#switcher1:checked ~ .mem-images-wrapper .mem {
+    /* transform: translateX(0%); */
+}
+
+#btn2:checked ~ .mems .frame{
+    /* background-color: #00ff15; */
+    /* transform: translateX(-400%); */
+}
+
+#btn1:checked ~ .mems .frame{
+    /* background-color: #00ff15; */
+    /* transform: translateX(-300%); */
+}
