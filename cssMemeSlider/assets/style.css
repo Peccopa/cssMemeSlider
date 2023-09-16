@@ -38,11 +38,13 @@ input {
     width: 27rem;
     display: flex;
     overflow: hidden;
+    margin-left: 1vw;
 }
 
 .btns {
     display: flex;
     justify-content: end;
+    /* margin: 1vw 0 1vw; */
 }
 
 .text {
@@ -50,7 +52,7 @@ input {
     min-width: 27rem;
     font-size: 2rem;
     color: #ffa500;
-    text-align: center;
+    text-align: start;
     line-height: 3;
     white-space: nowrap;
     transition: 1s linear;
@@ -224,10 +226,12 @@ label {
     }
 
     .btns {
-        margin: 0 auto;
+        margin: 6vw auto 0;
     }
 
     .text {
+        font-size: 4vw;
+        text-align: center;
         width: 100%;
     }
 }
@@ -244,7 +248,7 @@ label {
     }
     .text {
         min-width: 100vw;
-        font-size: 5.5vw;
+        font-size: 5vw;
         width: 100%;
         text-align: center;
     }
