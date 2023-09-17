@@ -215,7 +215,7 @@ label {
 
 /*Media*/
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
     .menu {
         flex-wrap: wrap-reverse;
     }
