@@ -221,7 +221,6 @@ label {
     }
 
     .texts {
-        /* margin: 0 auto; */
         width: 27rem;
     }
 
@@ -232,7 +231,6 @@ label {
     .text {
         margin-left: 1vw;
         font-size: 4vw;
-        /* text-align: center; */
         width: 100%;
     }
 }
@@ -244,13 +242,11 @@ label {
     }
 
     .texts {
-        /* margin: 0; */
         width: 100vw;
     }
     .text {
         min-width: 100vw;
         font-size: 5vw;
         width: 100%;
-        /* text-align: center; */
     }
 }
